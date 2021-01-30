@@ -7,9 +7,17 @@ const options = {
     colors: {
         border: 'black',
         bg: 'red'
+    },
+    makeTest: function () {
+        console.log('test')
     }
 }
 console.log(options)
+
+options.makeTest()
+
+const {border, bg} = options.colors
+console.log(border)
 
 // delete  options.name
 
